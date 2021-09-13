@@ -4,6 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.SplashscreenActivity">
+    tools:context=".ui.activities.SplashscreenActivity"
+    android:background="@color/colorPrimaryDark">
 
+    <ImageView
+        android:id="@+id/ivLogoPlatziConf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightLogo"
+        android:src="@drawable/logo_platzi_conf"
+        android:contentDescription="Platzi Conf logo splash" />
 </androidx.constraintlayout.widget.ConstraintLayout>
