@@ -1,4 +1,4 @@
-package com.mishrole.platziconf.ui
+package com.mishrole.platziconf.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
