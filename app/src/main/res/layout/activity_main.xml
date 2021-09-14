@@ -11,7 +11,15 @@
         <Toolbar
             android:id="@+id/toolbarMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightToolbar"
+                android:contentDescription="PlatziConf Logo"
+                android:src="@drawable/logo_platzi_conf"
+                android:layout_marginHorizontal="@dimen/heightToolbar">
+            </ImageView>
         </Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
