@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_icons_home">
+    </item>
+    <item
+        android:id="@+id/navScheduleFragment"
+        android:title="Schedule"
+        android:icon="@drawable/ic_icons_schedule">
+    </item>
+    <item
+        android:id="@+id/navSpeakersFragment"
+        android:title="Speakers"
+        android:icon="@drawable/ic_icons_speakers">
+    </item>
+    <item
+        android:id="@+id/navLocationFragment"
+        android:title="Location"
+        android:icon="@drawable/ic_icons_location">
+    </item>
+</menu>
