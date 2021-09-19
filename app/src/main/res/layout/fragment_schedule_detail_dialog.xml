@@ -82,12 +82,14 @@
                             android:layout_margin="@dimen/cardCornerRadius"/>
                         <TextView
                             android:id="@+id/tvDetailsConferenceTag"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tag"
+                            android:layout_gravity="center"
                             android:textSize="@dimen/minSize"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
+                            android:background="@drawable/shape_tag"
                             android:layout_margin="@dimen/cardCornerRadius"/>
                         <TextView
                             android:id="@+id/tvDetailsConferenceDescription"

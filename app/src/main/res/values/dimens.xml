@@ -3,7 +3,7 @@
     <dimen name="heightLogo">45dp</dimen>
     <dimen name="heightToolbar">30dp</dimen>
     <dimen name="cardCornerRadius">4dp</dimen>
-    <dimen name="heightImageViewHome">150dp</dimen>
+    <dimen name="heightImageViewHome">200dp</dimen>
     <dimen name="iconBox">40dp</dimen>
     <dimen name="marginHome">8dp</dimen>
     <dimen name="marginDetail">30dp</dimen>
