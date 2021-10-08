@@ -19,10 +19,7 @@ class FirestoreService {
             .orderBy(SPEAKERS_ORDER_BY)
             .get()
             .addOnSuccessListener { result ->
-                for (document in result) {
-                    callback.onSuccess(document.toObject(Speaker::class.java))
-                    break
-                }
+                callback.onSuccess(result.toObjects(Speaker::class.java))
             }
     }
 
@@ -30,10 +27,7 @@ class FirestoreService {
         firebaseFirestore.collection(CONFERENCES_COLLECTION)
             .get()
             .addOnSuccessListener { result ->
-                for ( document in result) {
-                    callback.onSuccess(document.toObject(Conference::class.java))
-                    break
-                }
+                callback.onSuccess(result.toObjects(Conference::class.java))
             }
     }
 
