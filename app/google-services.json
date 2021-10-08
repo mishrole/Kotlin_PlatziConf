@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "259059631040",
+    "project_id": "platzi-b2201",
+    "storage_bucket": "platzi-b2201.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259059631040:android:aa9303805f54385f14be25",
+        "android_client_info": {
+          "package_name": "com.mishrole.platziconf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259059631040-itup1rn5vnu1mauh05melqnvl29fdtpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlu_TlKMpDg85N9dL24-2MNmmaNIYf_Co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259059631040-itup1rn5vnu1mauh05melqnvl29fdtpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
