@@ -13,7 +13,7 @@
         <ImageView
             android:id="@+id/ivSpeakerImage"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/heightImageViewHome"
+            android:layout_height="wrap_content"
             android:contentDescription="Image View Home"
             android:src="@drawable/platzi_conf_2"
             android:scaleType="centerCrop"
