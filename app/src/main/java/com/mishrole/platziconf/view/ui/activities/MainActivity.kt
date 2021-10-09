@@ -1,13 +1,8 @@
-package com.mishrole.platziconf
+package com.mishrole.platziconf.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.firestore.FirebaseFirestore
-import com.mishrole.platziconf.model.Conference
-import com.mishrole.platziconf.model.Speaker
-import org.json.JSONArray
-import org.json.JSONObject
-import java.util.*
+import com.mishrole.platziconf.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

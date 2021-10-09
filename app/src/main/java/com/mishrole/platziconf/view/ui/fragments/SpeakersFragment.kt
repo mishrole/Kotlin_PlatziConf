@@ -1,4 +1,4 @@
-package com.mishrole.platziconf.ui.fragments
+package com.mishrole.platziconf.view.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

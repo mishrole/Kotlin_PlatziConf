@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/ivSpeakerImage"
             android:layout_width="match_parent"
             android:layout_height="@dimen/heightImageViewHome"
             android:contentDescription="Image View Home"
@@ -18,6 +19,7 @@
             android:scaleType="centerCrop"
             android:layout_margin="10dp"/>
         <TextView
+            android:id="@+id/tvSpeakerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre de Expositor"
@@ -28,6 +30,7 @@
             android:layout_margin="@dimen/marginHome">
         </TextView>
         <TextView
+            android:id="@+id/tvSpeakerWork"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo de Expositor"
