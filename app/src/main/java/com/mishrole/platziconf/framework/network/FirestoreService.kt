@@ -2,8 +2,8 @@ package com.mishrole.platziconf.network
 
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.mishrole.platziconf.model.Conference
-import com.mishrole.platziconf.model.Speaker
+import com.mishrole.platziconf.core.entity.Conference
+import com.mishrole.platziconf.core.entity.Speaker
 
 class FirestoreService {
     private val firebaseFirestore = FirebaseFirestore.getInstance()

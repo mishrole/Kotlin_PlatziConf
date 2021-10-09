@@ -1,4 +1,4 @@
-package com.mishrole.platziconf.model
+package com.mishrole.platziconf.core.entity
 
 import java.util.*
 

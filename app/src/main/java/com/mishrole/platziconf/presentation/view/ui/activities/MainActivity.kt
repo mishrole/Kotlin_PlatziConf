@@ -1,13 +1,28 @@
-package com.mishrole.platziconf.view.ui.activities
+package com.mishrole.platziconf.presentation.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import com.mishrole.platziconf.R
+import com.mishrole.platziconf.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.appToolbar.root)
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContent) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        NavigationUI.setupWithNavController(binding.bnvMenu, navController)
 
         /*
 
@@ -326,4 +341,10 @@ class MainActivity : AppCompatActivity() {
 
          */
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.fragmentContent)
+        return navController.navigateUp()
+    }
+
 }

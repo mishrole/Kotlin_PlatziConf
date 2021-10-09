@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ui.fragments.ScheduleFragment">
+    tools:context=".presentation.view.ui.fragments.ScheduleFragment">
 
     <!-- Recycler View requires new dependency -->
     <androidx.recyclerview.widget.RecyclerView
@@ -11,21 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- RelativeLayout allows us to superimpose views -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimary"
-            android:alpha="0.4"
-            />
+    <include
+        android:id="@+id/progressLayout"
+        layout="@layout/layout_progress_bar"
+        />
 
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            />
-    </RelativeLayout>
 </FrameLayout>

@@ -1,10 +1,10 @@
-package com.mishrole.platziconf.view.adapter
+package com.mishrole.platziconf.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mishrole.platziconf.databinding.ItemScheduleBinding
-import com.mishrole.platziconf.model.Conference
+import com.mishrole.platziconf.core.entity.Conference
 import java.text.SimpleDateFormat
 import java.util.*
 

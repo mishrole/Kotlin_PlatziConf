@@ -1,4 +1,4 @@
-package com.mishrole.platziconf.view.adapter
+package com.mishrole.platziconf.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.mishrole.platziconf.databinding.ItemSpeakerBinding
-import com.mishrole.platziconf.model.Speaker
+import com.mishrole.platziconf.core.entity.Speaker
 
 class SpeakersAdapter (
     private val speakersData : MutableList<Speaker> = mutableListOf()
