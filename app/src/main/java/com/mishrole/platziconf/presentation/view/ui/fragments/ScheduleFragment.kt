@@ -60,7 +60,6 @@ class ScheduleFragment : Fragment() {
     }
 
     private fun goToSchedule(itemConference : Conference) {
-        Toast.makeText(context, "Go to Conference from Speaker ${itemConference.speaker}", Toast.LENGTH_LONG).show()
         findNavController().navigate(R.id.scheduleDetailFragmentDialog, bundleOf("CONFERENCE_ITEM" to itemConference))
     }
 

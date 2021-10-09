@@ -60,7 +60,6 @@ class SpeakersFragment : Fragment() {
     }
 
     private fun goToSpeaker(itemSpeaker: Speaker) {
-        Toast.makeText(context, "Go to Speaker ${itemSpeaker.name} Profile", Toast.LENGTH_LONG).show()
         findNavController().navigate(R.id.speakersDetailFragmentDialog, bundleOf("SPEAKER_ITEM" to itemSpeaker))
     }
 

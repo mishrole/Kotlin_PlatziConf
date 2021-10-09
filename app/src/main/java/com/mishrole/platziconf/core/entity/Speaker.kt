@@ -1,6 +1,8 @@
 package com.mishrole.platziconf.core.entity
 
-class Speaker {
+import java.io.Serializable
+
+class Speaker : Serializable {
     var name = ""
     var jobTitle = ""
     var workPlace = ""

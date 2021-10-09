@@ -4,17 +4,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--<com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="60dp">
         <Toolbar
-        <Toolbar
-            android:id="@+id/toolbarConference"
+            android:id="@+id/toolbarSpeakers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </com.google.android.material.appbar.AppBarLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ScrollView
@@ -36,16 +36,11 @@
                         android:layout_gravity="center"
                         android:layout_margin="@dimen/marginContainer">
                         <ImageView
+                            android:id="@+id/ivSpeakerImage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:src="@drawable/platzi_conf_2"
                             android:scaleType="centerCrop" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:alpha="0.5"
-                            android:background="@color/colorPrimary" />
 
                     </RelativeLayout>
 
@@ -54,7 +49,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/tvItemScheduleTag"
+                            android:id="@+id/tvSpeakerName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Speaker Name"
@@ -64,7 +59,7 @@
                             android:gravity="center_horizontal"
                             android:layout_centerInParent="true"/>
                         <TextView
-                            android:id="@+id/tvDetailsConferenceSpeaker"
+                            android:id="@+id/tvSpeakerJobTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="JobTitle"
@@ -73,7 +68,7 @@
                             android:gravity="center_horizontal"
                             android:layout_margin="@dimen/cardCornerRadius"/>
                         <TextView
-                            android:id="@+id/tvDetailsConferenceHour"
+                            android:id="@+id/tvSpeakerWork"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Work"
@@ -95,7 +90,7 @@
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
                         <TextView
-                            android:id="@+id/tvDetailsConferenceDescription"
+                            android:id="@+id/tvSpeakerDescription"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Description"

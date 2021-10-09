@@ -4,17 +4,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--<com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Toolbar
+        android:layout_height="60dp">
         <Toolbar
             android:id="@+id/toolbarConference"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </com.google.android.material.appbar.AppBarLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ScrollView
@@ -22,16 +22,17 @@
             android:layout_height="match_parent">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="200dp">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/platzi_conf_2"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_2" />
 
                     <View
                         android:layout_width="match_parent"
@@ -39,7 +40,7 @@
                         android:alpha="0.5"
                         android:background="@color/colorPrimary" />
                     <TextView
-                        android:id="@+id/tvItemScheduleTag"
+                        android:id="@+id/tvItemScheduleTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Conference Title"
