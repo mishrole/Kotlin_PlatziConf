@@ -80,6 +80,7 @@
                             android:layout_margin="@dimen/cardCornerRadius"/>
 
                         <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layoutTwitter"
                             android:layout_width="@dimen/iconBox"
                             android:layout_height="@dimen/iconBox"
                             android:layout_gravity="center">

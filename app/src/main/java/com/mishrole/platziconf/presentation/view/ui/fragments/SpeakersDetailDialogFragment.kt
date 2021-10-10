@@ -1,6 +1,8 @@
 package com.mishrole.platziconf.presentation.view.ui.fragments
 
+import android.content.Intent
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -53,6 +55,12 @@ class SpeakersDetailDialogFragment : DialogFragment() {
         binding.tvSpeakerJobTitle.text = speaker.jobTitle
         binding.tvSpeakerWork.text = speaker.workPlace
         binding.tvSpeakerDescription.text = speaker.biography
+        binding.layoutTwitter.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse("https://twitter.com/${speaker.twitter}")
+            }
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {
