@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="@dimen/cardCornerRadius"
-    app:cardElevation="0dp"
     android:layout_margin="8dp"
     android:clickable="true"
     android:background="@drawable/shape_paragraph"
@@ -13,6 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
         android:orientation="vertical">
         <ImageView
             android:layout_gravity="center_horizontal"
