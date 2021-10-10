@@ -4,17 +4,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--<com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="60dp">
         <Toolbar
-        <Toolbar
-            android:id="@+id/toolbarConference"
+            android:id="@+id/toolbarLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </com.google.android.material.appbar.AppBarLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ScrollView
@@ -25,6 +25,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <ImageView
+                    android:id="@+id/ivLocation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/platzi_conf_2"
@@ -42,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/tvItemScheduleTag"
+                            android:id="@+id/tvDetailsLocationName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Location Name"

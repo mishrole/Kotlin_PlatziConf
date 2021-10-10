@@ -45,6 +45,7 @@ android {
 ext {
     lifecycle_version = '2.3.1'
     koin_version = '3.1.2'
+    gcpservices_version = '17.0.1'
 }
 
 dependencies {
@@ -76,4 +77,7 @@ dependencies {
     api "io.insert-koin:koin-android:$koin_version"
     // Koin test features
     testImplementation "io.insert-koin:koin-test:$koin_version"
+
+    // Google Maps
+    implementation "com.google.android.gms:play-services-maps:$gcpservices_version"
 }
