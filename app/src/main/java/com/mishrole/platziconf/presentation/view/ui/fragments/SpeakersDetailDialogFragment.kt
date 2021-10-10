@@ -54,5 +54,10 @@ class SpeakersDetailDialogFragment : DialogFragment() {
         binding.tvSpeakerWork.text = speaker.workPlace
         binding.tvSpeakerDescription.text = speaker.biography
     }
+
+    override fun onStart() {
+        super.onStart()
+        dialog?.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+    }
     
 }

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mishrole.platziconf.R
 import com.mishrole.platziconf.core.entity.Speaker
@@ -42,7 +43,7 @@ class SpeakersFragment : Fragment() {
         }
 
         binding.rvSpeakers.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+            layoutManager = GridLayoutManager(context, 2)
             adapter = speakersAdapter
         }
 

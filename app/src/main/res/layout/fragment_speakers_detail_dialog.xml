@@ -6,7 +6,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="wrap_content">
         <Toolbar
             android:id="@+id/toolbarSpeakers"
             android:layout_width="match_parent"
@@ -14,9 +14,9 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
-        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -29,7 +29,8 @@
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_paragraph">
                     <RelativeLayout
                         android:layout_width="@dimen/heightImageViewHome"
                         android:layout_height="@dimen/heightImageViewHome"
